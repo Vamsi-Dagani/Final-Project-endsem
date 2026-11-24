@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details App</title>
+</head>
+
+<body>
+
+    <h2>Student Details</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        function student(props) {
+
+            document.getElementById("result").innerHTML +=
+                "<h3>Student " + props.id + "</h3>" +
+                "Student Name: " + props.name + "<br>" +
+                "Student Course: " + props.course + "<br>" +
+                "Faculty Name: " + props.faculty + "<br><br>";
+        }
+
+        student({
+            id: 1,
+            name: "D.Vamsi",
+            course: "FSWD",
+            faculty: "Mr. Dineshnath"
+        });
+
+        student({
+            id: 2,
+            name: "Rahul",
+            course: "Data Structures",
+            faculty: "Dr.Siva Kumar Pathuri"
+        });
+    </script>
+
+</body>
+</html>
